@@ -1,0 +1,177 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.margen {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #eb7201;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.margen a {
+    display: block;
+    padding: 20px 20px;
+    color: #eb7201;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.margen a:hover {
+    background: #3f3f3f;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header {
+    height: 60vh !important;
+    background: url(img/c.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.titulo {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 20px;
+    color: #fff;
+    padding: 0 100px;
+}
+.sau {
+    padding: 30px;
+    background: #1f1d1d
+}
+
+.cuadritos {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #e95b08;
+    color: #fff;
+    text-decoration: none;
+    background: #e95b08;
+}
+
+.cuadritos:hover {
+    background: none;
+    
+}
+
+.cuadritos-home {
+    display: flex;
+}
+
+.cuadritos-home a {
+    margin: 0 10px;
+}
+
+
+.contenido {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-rectangulo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.box-rectangulo .box {
+    height: 11rem;
+    width: 17rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+    margin: 2rem;   
+}
+
+.box-rectangulo .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #e95b08;
+    font-size: 2rem;
+    margin: 1rem 0;
+
+}
+
+.box-rectangulo .box h3 {
+    font-size: 20px;
+    color: #e95b08;
+
+}
+
+.box-rectangulo .box p {
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.about {
+    background: #171717;
+}
+
+.price {
+    background: url(img/a.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+.contact {
+    padding-top: 20px;
+    background: #171717;
+    padding-bottom: 0;
+}
+
+

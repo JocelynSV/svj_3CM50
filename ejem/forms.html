@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de tener este enlace a tu archivo de estilos -->
+</head>
+<body>
+
+    <div class="head">
+        <div class="logo">
+            <a href="#" class="logo">Mi Sitio</a>
+        </div>
+        <div class="margen">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="index.html" class="nav-link">Acerca</a>
+            <a href="index.html" class="nav-link">Contacto</a>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <h2>Formulario de Contacto</h2>
+        <form id="formularioContacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" rows="4" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("formularioContacto").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evita que la página se recargue al enviar el formulario
+
+            // Obtén los valores del formulario
+            var nombre = document.getElementById("nombre").value;
+            var apellidos = document.getElementById("apellidos").value;
+            var correo = document.getElementById("correo").value;
+            var telefono = document.getElementById("telefono").value;
+            var comentario = document.getElementById("comentario").value;
+
+            // Realiza el procesamiento deseado (puedes enviar los datos a un servidor, mostrar una alerta, etc.)
+            // En este ejemplo, simplemente muestra una alerta con la información del formulario
+            alert("Nombre: " + nombre + "\nApellidos: " + apellidos + "\nCorreo: " + correo + "\nTeléfono: " + telefono + "\nComentario: " + comentario);
+        });
+    </script>
+
+</body>
+</html>
